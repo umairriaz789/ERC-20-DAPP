@@ -9,6 +9,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import { useAppDispatch } from '../redux/store';
 import { loadBlockchain } from '../redux/Slices/web3ContractSlices';
 import Button from 'react-bootstrap/Button';
+import img4 from '../imges/img4.png'
 
 
 const Navbar = () => {
@@ -47,7 +48,8 @@ const Navbar = () => {
     return (
         <>
             <Card className="bg-dark text-white text-xl-left" >
-                <Card.Img src="imgs/img3.png" alt="Card image" />
+                <img src={img4} alt="imgsss"/>
+
                 <Card.ImgOverlay>
                     <Card.Title className="texttitle">ERC-20 DApp</Card.Title>
                     <div className="connectButton">
@@ -55,7 +57,7 @@ const Navbar = () => {
                     </div>
 
                     <Card.Text className="text">
-                        Submitted By: Umair Riaz (PIAIC106832)
+                     Created By: Umair Riaz
                     </Card.Text>
                     <div className="badgess">
                         <Badge bg="success">Trnasfer</Badge> <Badge bg="danger">Approve</Badge> <Badge bg="light" text="dark">transferFrom</Badge>
